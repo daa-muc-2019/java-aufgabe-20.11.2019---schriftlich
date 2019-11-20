@@ -2,6 +2,11 @@
 
 
 > Written with [StackEdit](https://stackedit.io/).
+
+>Aufgabe verfügbar auf:
+>
+>https://github.com/daa-muc-2019/java-aufgabe-20.11.2019---schriftlich
+>
 # Aufgabe: Code auf Papier
 
 ## 1. Java Syntax
@@ -360,6 +365,8 @@ System.out.println(_________________);
 
 }
 ```
+
+### Übertragen Sie die Code fragmente sinnvoll auf Ihren PC und überprüfen Sie Ihre Antworten
 
 
 
