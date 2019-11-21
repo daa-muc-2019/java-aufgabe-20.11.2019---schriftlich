@@ -2,6 +2,7 @@
 
 
 > Written with [StackEdit](https://stackedit.io/).
+Geschrieben in Markdown
 
 >Aufgabe verfügbar auf:
 >
@@ -34,6 +35,7 @@ Vervollständigen Sie
        mehrzeiliger Kommentar ____
 ```
 ## Variablen
+
 ### 1
 Erstellen Sie eine Variable(deklarieren): ```carName``` und initialisieren Sie diese mit dem Wert: ```Volvo```
 
@@ -57,7 +59,7 @@ Lassen Sie die Summe von  ```5 + 10 ```, mit der Hilfe der 2 Variablen  ```x ```
 _____  ___  = ____;
  int y = 10;
  System.out.println(x + y);
-  ```java 
+  ``` 
 
 ### 4
 Erstellen Sie eine Variable ```z```. ```z``` ist dabei die Summe aus ```x``` und ```y```.
@@ -70,6 +72,8 @@ int y = 10;
 ______  ____ = ______ +  ______;
 
 System.out.println(____);
+```
+
 ### 5
 ```java
 
@@ -206,7 +210,9 @@ System.out.println(hello ___ ___________);
 ### 1
 
 Vervollständigen Sie den Code, damit auf der Console
+
 >true 
+>
 >false
 
 ausgegeben wird.
@@ -222,7 +228,7 @@ System.out.println(isFishTasty);
 
 ### 2
 Vervollständigen Sie den Code, damit auf der Console
->ture
+>true
 
 ausgegeben wird.
 
@@ -321,7 +327,7 @@ String output = "ja";
 ### 3
 geben ist ein Array mit den Werten `Volvo`, `BMW`, `Ford`
 Geben Sie innerhalb einer Schleife folgenden Inhalt auf der Konsole aus:
-> Volovo
+> Volvo
 > BMW
 > Ford
 

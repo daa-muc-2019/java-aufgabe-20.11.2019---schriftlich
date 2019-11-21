@@ -4,6 +4,8 @@
 > Written with [StackEdit](https://stackedit.io/).
 Geschrieben in Markdown
 
+um Markdown Datein zu speichern: .md
+
 >Aufgabe verfügbar auf:
 >
 >https://github.com/daa-muc-2019/java-aufgabe-20.11.2019---schriftlich
@@ -23,7 +25,7 @@ Vervollständigen Sie den Code um auf der Konsole
 public class MyClass {
   public static void main(String[] args) {
   
-   __________.______.__________("Hello World");
+   System.out.print("Hello World");
   }
 }
 ```
@@ -32,10 +34,11 @@ Vervollständigen Sie
 
 ```java
 
-   _____ Ich bin ein einzeiliger Kommentar
+   // Ich bin ein einzeiliger Kommentar
        
-   _____ Ich bin ein
-       mehrzeiliger Kommentar ____
+   /* Ich bin ein
+       mehrzeiliger Kommentar */
+	   
 ```
 ## Variablen
 
@@ -44,7 +47,7 @@ Erstellen Sie eine Variable(deklarieren): ```carName``` und initialisieren Sie d
 
 ```java
 
-___________  ___________ = ______________ ;
+String  carName = "Volvo" ;
  ```
 
 ### 2
@@ -52,15 +55,16 @@ Erstellen Sie eine Variable ```maxSpeed``` und initialisieren Sie diese mit dem 
 
 ```java
 
- _____  ____________ =__________;
+ int  maxSpeed =120;
  ```
+ 
 ### 3
 Lassen Sie die Summe von  ```5 + 10 ```, mit der Hilfe der 2 Variablen  ```x ``` und  ```y ``` anzeigen.
 
  ```java
  
-_____  ___  = ____;
- int y = 10;
+int  x  = 5;
+int y = 10;
  System.out.println(x + y);
   ``` 
 
@@ -72,15 +76,18 @@ Geben Sie das Resultat auf der Konsole aus.
 int x = 5;
 int y = 10;
 
-______  ____ = ______ +  ______;
+int z = x + y;
 
-System.out.println(____);
+System.out.println(z);
 ```
 
 ### 5
 ```java
 
-_____ x = 5___ y = 6 ____ z = 50;
+int x = 5, y = 6, z = 50;
+//alternative
+int x = 5; int y = 6; int z = 50;
+
 System.out.println(x + y + z);
 ```
 
@@ -91,15 +98,15 @@ Vervollständigen Sie den Code
 
 ```java
 
- __________ myNum = 9;
+ int myNum = 9;
  
- __________ myFloatNum = 8.99f;
+ float myFloatNum = 8.99f;
  
- __________ myLetter = 'A';
+ char myLetter = 'A';
  
- __________ myBool = false;
+ boolean myBool = false;
  
- __________ myText = "Hello World";
+ String myText = "Hello World";
 
 
 ```
@@ -109,7 +116,7 @@ Vervollständigen Sie den Code
 
 ```
 
- _________________ Datentypen.
+ primitive Datentypen.
 ```
 
 ### 3
@@ -118,14 +125,19 @@ Wandeln Sie das Attribut `myDouble` in ein `int` um
 
 double myDouble = 9.78;
 
-int myInt = _________ myDouble;
+int myInt = (int)  myDouble;
 ```
 ### 3.1
 welchen Wert besitzt myInt? Mit kleiner Erklärung
 
 ```
 
-Antwort:
+Antwort:	- 9
+
+			- int entspricht ganzer Zahl
+			
+			- Alles nach dem `.` wird abgeschnitten
+			
 
 
 
@@ -138,9 +150,17 @@ Antwort:
 Multiplizieren Sie `10` mit `5`, und geben Sie das Resultat auf der Konsole aus.
 
 
-```
+```java
 
-Antwort:
+//Antwort:	
+	
+System.out.print(5*10);
+
+//oder:
+
+int result = 5*10;
+
+System.out.println(result);
 
 
 
@@ -148,12 +168,18 @@ Antwort:
 ### 2
 Dividieren Sie `10` durch `5` und geben Sie das Resultat auf der Konsole aus.
 
-```
+```java
+//Antwort:	
+	
+System.out.print(5/10);
 
-Antwort:
+//oder:
 
+int result = 5/10;
 
+//kein backslash: \
 
+System.out.println(result);
 ```
 
 ### 3
@@ -162,10 +188,16 @@ Inkrementieren den Wert von x um eins nach oben: (inkrementieren = Schrittweisen
 ```
 int x = 10;
 
-x______ ;
+x++;
+
 //alternativ:
 
-_______x;
+++x;
+
+x = x + 1;
+
+x += 1;
+
 ```
 ### 4
 Addieren Sie in der Kurzschreibweise `5` zur Variablen `x`
@@ -173,7 +205,7 @@ Addieren Sie in der Kurzschreibweise `5` zur Variablen `x`
 ```java
 int x = 10;
 
-x _______ 5;
+x += 5;
 
 ```
 
@@ -183,7 +215,7 @@ Vervollständigen Sie den Code, damit die Variable `greeting` vom Typ`String` mi
 
 ```java
 
-____________ ___________ = _____________ ;
+String greeting = "Hello";
 
 
 ```
@@ -193,7 +225,7 @@ Vervollständigen Sie den Code. Ziel ist auf der Konsole die Länge der Variable
 ```java
 String txt = "Hello";
 
-System.out.println(____.___________);
+System.out.println(txt.length());
 
 ```
 ### 3
@@ -201,10 +233,10 @@ Ergänzen Sie den Code so, dass auf der Konsole `Hello World!`ausgegeben wird
 
 ```java
 String hello = "Hello ";
+// String world = "World!;
 
 
-
-System.out.println(hello ___ ___________);
+System.out.println(hello + "World!");
 
 ```
 
@@ -222,15 +254,17 @@ ausgegeben wird.
 
 
 ```java
- __________ isJavaFun = _______;
+ boolean isJavaFun = true;
  
- __________ isFishTasty = _________;
+ boolean isFishTasty = false;
+ 
 System.out.println(isJavaFun);
 System.out.println(isFishTasty);
 ```
 
 ### 2
 Vervollständigen Sie den Code, damit auf der Console
+
 >true
 
 ausgegeben wird.
@@ -239,7 +273,7 @@ ausgegeben wird.
 int x = 10;
 int y = 9;
 
-System.out.println(x _____ y  );
+System.out.println(x > y  );
 
 ```
 
@@ -247,15 +281,17 @@ System.out.println(x _____ y  );
 
 ### 1
 Geben Sie
+
 >Hello World
 >
+
 auf der Konsole aus, wenn `x`größer ist als `y`
 
 ```java
 int x = 50;
 int y = 10;
 
-____ (x ____ y) {
+if (x > y) {
   System.out.println("Hello World");
 }
 
@@ -270,9 +306,10 @@ Print `x und y sind gleich`, falls `x`und `y`gleich sind, andernfalls print `x u
 
 int x = 50;
 int y = 50;
-____ (x _____ y) {
+
+if (x == y) {
   System.out.println("Yes");
-} _____  {
+} else  {
   System.out.println("No");
 }
 
@@ -289,13 +326,13 @@ int x = 50;
 int y = 50;
 
 
-___ ________ {
+if (x == y) {
   System.out.println("1");
   
-}  ____________ {
+}  else if (x>y) {
   System.out.println("2");
   
-}  _________{
+}  else{
   System.out.println("3");
 }
 
@@ -303,16 +340,20 @@ ___ ________ {
 
 ## Schleifen
 ### 1
-Print `i` solange `i`kleiner als `6`ist
+Print `i` solange `i`kleiner als `6`ist und mind. 4x ausgeführt wird (kein endlos Loop erstellen)
 
 ```java
 
 int i = 1;
 
-________ ( ____ < _____) {
+while ( i < 6) {
 	System.out.println(i);
 
-_______;
+i++;
+// i = i + 1;
+// i += 1;
+
+}
 ```
 
 ### 2
@@ -321,9 +362,9 @@ Nutzen sie eine `for`-Schleife um 5 mal `ja`auf der Console auszugeben
 ```java
 String output = "ja";
 
- _______ (_____ ___ = ___; ___ < ____; _____ ) {
+ for (int i = 0; i < 5; i++ ) {
  
-  System.out.println(_____);
+  System.out.println(output);
 }
 ```
 
@@ -337,9 +378,10 @@ Geben Sie innerhalb einer Schleife folgenden Inhalt auf der Konsole aus:
 ```java
 String[] cars = {"Volvo", "BMW", "Ford"};
 
- _______ (_____ ___ = ___; ___ < ___________; _____ ) {
+//					Wert: 3
+for (int i = 0; i < cars.length; i++ ) {
 
-System.out.println(_________________);
+System.out.println(cars[i]);
 
 }
 ```
@@ -350,7 +392,7 @@ Erstellen Sie ein array vom Typ `Char` mit dem Namen`vokale`. Befüllen Sie dies
 
 ```java 
 
-_______  __________ = _____________________________
+char[]  vokale = {'a', 'e', 'i', 'o', 'u'};
 
 
 
@@ -368,9 +410,9 @@ Geben sie die Vokale auf der Console im folgenden Format aus:
 ```java
 
 
- _______ (_____ ___ = ___; ___ < ___________; _____ ) {
+for (int i = 0; i < vokale.length; i++ ) {
 
-System.out.println(_________________);
+System.out.println(vokale[i]);
 
 }
 ```
