@@ -132,7 +132,8 @@ welchen Wert besitzt myInt? Mit kleiner Erklärung
 
 ```
 
-Antwort:	- 9
+Antwort:	
+			- 9
 
 			- int entspricht ganzer Zahl
 			
